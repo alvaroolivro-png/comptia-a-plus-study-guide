@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free, accessible CompTIA A+ V15 study notes, Professor Messer course links, and original practice quizzes.">
+  <title>CompTIA A+ Study Guide — V15</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to study guide</a>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">FREE STUDY NOTES · CORE 1 + CORE 2</p>
+      <h1>CompTIA A+ Study Guide</h1>
+      <p class="lede">Clear, original notes, free video lessons, and practice checks for the current A+ V15 exams: 220-1201 and 220-1202. Use CompTIA’s official objectives as the final checklist. <a href="#sources">Source [1]</a></p>
+      <p class="notice"><strong>Version check:</strong> Core 1 and Core 2 must be from the same exam series. Confirm your exam code before studying. This guide is an independent aid, not endorsed by CompTIA or Professor Messer.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Study guide sections">
+    <div class="wrap nav-links">
+      <a href="#plan">Study plan</a>
+      <a href="#core1">Core 1</a>
+      <a href="#core2">Core 2</a>
+      <a href="#messer">Professor Messer videos</a>
+      <a href="#practice">Practice tests</a>
+      <a href="#sources">Free sources</a>
+    </div>
+  </nav>
+
+  <main id="main" class="wrap">
+    <section id="plan" class="section" aria-labelledby="plan-title">
+      <h2 id="plan-title">A practical study loop</h2>
+      <ol class="steps">
+        <li><strong>Map:</strong> download the official objectives and mark each item “know / review / learn.”</li>
+        <li><strong>Learn:</strong> read one topic below, then watch the matching free lesson in Professor Messer’s course index.</li>
+        <li><strong>Recall:</strong> close your notes and explain the idea aloud; draw a diagram or list troubleshooting steps from memory.</li>
+        <li><strong>Apply:</strong> do a small lab or scenario. Explain why each wrong answer is wrong.</li>
+        <li><strong>Review:</strong> revisit missed objectives after a day and again later in the week.</li>
+      </ol>
+      <p>CompTIA lists up to 90 questions per exam, a 90-minute limit, multiple-choice and performance-based formats, and separate passing scores for the two cores. Check the official page for changes before booking. <a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">Source [1]</a></p>
+    </section>
+
+    <section id="core1" class="section" aria-labelledby="core1-title">
+      <h2 id="core1-title">Core 1 · 220-1201</h2>
+      <p class="section-intro">Core 1 emphasizes devices, networking, hardware, cloud/virtualization, and hardware/network troubleshooting. The percentages below follow the current official summary. <a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">Source [1]</a></p>
+      <details open>
+        <summary>1 · Mobile devices — 13%</summary>
+        <ul>
+          <li><strong>Laptop service:</strong> identify the correct replacement part and service procedure; disconnect power and battery before internal work. ESD protection matters.</li>
+          <li><strong>Storage and memory:</strong> compare 2.5-inch SATA SSDs with M.2 SATA/NVMe drives; check form factor, interface, and supported keying. Laptop memory commonly uses SO-DIMMs.</li>
+          <li><strong>Connections:</strong> pair Bluetooth peripherals; NFC works at very short range; tethering shares a phone’s data connection. A docking station adds ports and may charge the laptop.</li>
+          <li><strong>Management:</strong> MDM applies organization policies and remote actions. Know BYOD, COPE, and data synchronization trade-offs.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> A laptop sees Wi-Fi but cannot reach the Internet. Name three checks before replacing hardware.</p>
+      </details>
+      <details>
+        <summary>2 · Networking — 23%</summary>
+        <ul>
+          <li><strong>Addressing:</strong> IPv4 uses a 32-bit address; IPv6 uses 128 bits. DHCP assigns addresses and options; DNS resolves names to records such as A/AAAA and MX.</li>
+          <li><strong>TCP vs UDP:</strong> TCP provides ordered, acknowledged delivery; UDP has lower overhead and no delivery guarantee. Choose based on application needs.</li>
+          <li><strong>Ports to recall:</strong> FTP 20/21, SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67/68, HTTP 80, POP3 110, IMAP 143, HTTPS 443, SMB 445, SMTP submission 587, LDAPS 636, IMAPS 993, POP3S 995, RDP 3389.</li>
+          <li><strong>Network gear:</strong> switches forward frames within a LAN; routers move packets between networks; APs bridge wireless clients; firewalls enforce traffic rules; modems/ONTs terminate ISP links.</li>
+          <li><strong>Wireless:</strong> 2.4 GHz tends to travel farther and is more congested; 5/6 GHz offer more capacity at shorter range. Use modern WPA2/WPA3 security and strong passphrases.</li>
+          <li><strong>Tools:</strong> ping tests reachability/latency, ipconfig/ifconfig inspects interfaces, nslookup checks DNS, tracert/traceroute follows a path, cable testers verify wiring.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> A client has a 169.254.x.x IPv4 address. Which service or path should you investigate first?</p>
+      </details>
+      <details>
+        <summary>3 · Hardware — 25%</summary>
+        <ul>
+          <li><strong>CPU and memory:</strong> match CPU socket, chipset, memory generation, and board support. RAM is volatile; storage is nonvolatile. Dual-channel needs compatible modules in the correct slots.</li>
+          <li><strong>Storage:</strong> HDDs use spinning platters; SSDs use flash. NVMe communicates over PCIe; SATA supports SATA drives. RAID 0 improves throughput but has no redundancy; RAID 1 mirrors; RAID 5 stripes with parity; RAID 10 combines mirroring and striping.</li>
+          <li><strong>Power and cooling:</strong> estimate PSU load with headroom; verify connectors, airflow direction, fan operation, and thermal paste/contact. Heat can cause throttling or shutdown.</li>
+          <li><strong>Connectors:</strong> distinguish USB-C connector shape from its supported protocol; HDMI/DisplayPort carry digital video and often audio; RJ-45 is common for Ethernet.</li>
+          <li><strong>Printers:</strong> laser uses toner, drum, and fuser; inkjet sprays liquid ink; thermal uses heat-sensitive media; impact printers strike ribbon/paper.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> Which RAID level provides mirroring with two drives, and what does it not replace?</p>
+      </details>
+      <details>
+        <summary>4 · Virtualization and cloud computing — 11%</summary>
+        <ul>
+          <li><strong>Hypervisors:</strong> Type 1 runs on hardware; Type 2 runs on a host OS. VMs need CPU virtualization support, memory, storage, and networking.</li>
+          <li><strong>Service models:</strong> IaaS gives virtual compute/network/storage; PaaS adds a managed application platform; SaaS delivers a complete hosted application.</li>
+          <li><strong>Deployment:</strong> public cloud is provider-operated/shared infrastructure; private cloud is dedicated to one organization; hybrid combines environments. Scalability adds/removes capacity; elasticity adjusts with demand.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> Who manages the guest OS in IaaS compared with SaaS?</p>
+      </details>
+      <details>
+        <summary>5 · Hardware and network troubleshooting — 28%</summary>
+        <ul>
+          <li><strong>Method:</strong> identify the problem, establish a theory, test it, plan and implement the fix, verify full function, and document. Change one variable at a time where practical.</li>
+          <li><strong>No power / no POST:</strong> check outlet, power cable, PSU switch, front-panel connection, board power connectors, RAM seating, and diagnostic LEDs/beeps.</li>
+          <li><strong>Storage:</strong> back up first when possible; check cabling, firmware/BIOS detection, SMART warnings, file-system errors, and the user's symptoms before destructive repair.</li>
+          <li><strong>Network:</strong> check link, Wi-Fi association, IP/gateway/DNS settings, DHCP lease, and reachability in layers. An APIPA address suggests DHCP did not provide a lease.</li>
+          <li><strong>Safety:</strong> use ESD controls; never open a CRT or PSU enclosure; follow battery and toner disposal guidance.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> A printer makes blank pages. Which consumable and imaging/transfer stages would you inspect?</p>
+      </details>
+    </section>
+
+    <section id="core2" class="section" aria-labelledby="core2-title">
+      <h2 id="core2-title">Core 2 · 220-1202</h2>
+      <p class="section-intro">Core 2 focuses on operating systems, security, software troubleshooting, and operational procedures. Domain weights below follow the current official summary. <a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">Source [1]</a></p>
+      <details open>
+        <summary>1 · Operating systems — 28%</summary>
+        <ul>
+          <li><strong>File systems:</strong> NTFS supports Windows permissions and large volumes; FAT32 has broad compatibility but a 4 GB single-file limit; exFAT suits removable media; ext4 is common on Linux; APFS is used by Apple systems.</li>
+          <li><strong>Windows tools:</strong> Task Manager shows processes/startup/performance; Device Manager manages hardware/driver state; Event Viewer reads logs; Disk Management handles partitions/volumes; Services manages background services.</li>
+          <li><strong>CLI:</strong> ipconfig checks IP configuration; ping tests reachability; tracert shows route hops; nslookup queries DNS; netstat shows connections/listeners; chkdsk checks file systems; sfc /scannow checks protected system files.</li>
+          <li><strong>Deployment:</strong> distinguish clean install from in-place upgrade; confirm hardware, license, storage, backup, boot mode, and partition scheme first.</li>
+          <li><strong>Linux/macOS:</strong> learn common interface conventions, permissions, package/update methods, and built-in diagnostic tools rather than assuming Windows commands apply.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> DNS name lookup fails but a known IP address responds. Which tool and configuration should you check?</p>
+      </details>
+      <details>
+        <summary>2 · Security — 28%</summary>
+        <ul>
+          <li><strong>Core goals:</strong> confidentiality limits disclosure; integrity prevents unauthorized change; availability keeps services usable.</li>
+          <li><strong>Access:</strong> use least privilege, unique accounts, MFA, strong authentication, screen locks, and timely account removal. Permissions should match job duties.</li>
+          <li><strong>Threats:</strong> phishing/social engineering manipulate people; ransomware encrypts data; spyware collects information; rootkits hide privileged access. Isolate suspected malware and preserve evidence per policy.</li>
+          <li><strong>Protection:</strong> patch systems, use endpoint protection and host/network firewalls, encrypt sensitive data at rest/in transit, and keep tested backups.</li>
+          <li><strong>Wireless:</strong> WPA3 or WPA2-AES, strong unique credentials, updated firmware, and a separate guest network improve SOHO security.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> A caller asks you to reset an executive password urgently. What identity-verification and escalation steps come first?</p>
+      </details>
+      <details>
+        <summary>3 · Software troubleshooting — 23%</summary>
+        <ul>
+          <li><strong>Start with scope:</strong> determine whether one user, one device, one app, or many users are affected; capture exact error text, recent changes, and reproducible steps.</li>
+          <li><strong>Common symptoms:</strong> slow startup suggests startup apps/resources/storage; application crashes suggest updates, compatibility, resources, or corrupt files; boot failure may involve boot order, storage, updates, or system files.</li>
+          <li><strong>Safe sequence:</strong> back up data, check known issues and logs, test a reversible fix, verify operation, and document. Avoid reinstalling or wiping before data is secured.</li>
+          <li><strong>Mobile:</strong> check airplane mode, Wi-Fi/cellular settings, app permissions, storage, updates, account sync, and whether the issue follows the network or device.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> An app fails only in one Windows user profile. What comparison can isolate a profile-specific cause?</p>
+      </details>
+      <details>
+        <summary>4 · Operational procedures — 21%</summary>
+        <ul>
+          <li><strong>Change control:</strong> record purpose, scope, risk, approval, maintenance window, rollback plan, and post-change verification.</li>
+          <li><strong>Documentation:</strong> capture symptoms, tests, results, actions, parts, configuration changes, and user confirmation. Protect confidential data in tickets.</li>
+          <li><strong>Backups:</strong> know full, incremental, and differential behavior; maintain off-site/isolated copies; verify restoration rather than assuming a backup is good.</li>
+          <li><strong>Safety and environment:</strong> ESD precautions, lifting/ergonomics, battery handling, SDS guidance, secure media sanitization, and approved recycling.</li>
+          <li><strong>Communication:</strong> use plain language, set expectations, protect privacy, avoid blame, and escalate when risk or authorization exceeds your role.</li>
+        </ul>
+        <p><strong>Recall prompt:</strong> What must a rollback plan let the technician do if a change fails?</p>
+      </details>
+    </section>
+
+    <section id="messer" class="section" aria-labelledby="messer-title">
+      <h2 id="messer-title">Professor Messer · free video study section</h2>
+      <p>Professor Messer’s official course indexes list free V15 training videos aligned to the Core 1 and Core 2 objectives. Follow the index in order, then return to the matching notes above. The videos remain on Professor Messer’s site/YouTube; this guide links to them and does not reproduce them. <a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/">Core 1 source [2]</a> · <a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/">Core 2 source [3]</a></p>
+      <div class="video-grid">
+        <article class="video-card">
+          <h3>Core 1 · 220-1201</h3>
+          <p>Course index: mobile devices, networking, hardware, cloud/virtualization, and troubleshooting.</p>
+          <p><a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/">Open Professor Messer’s free Core 1 course index</a></p>
+          <ul>
+            <li><a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/laptop-hardware-220-1201/">Laptop hardware</a></li>
+            <li><a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/connecting-mobile-devices-220-1201/">Connecting mobile devices</a></li>
+            <li><a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/network-services-220-1201/">Network services</a></li>
+          </ul>
+        </article>
+        <article class="video-card">
+          <h3>Core 2 · 220-1202</h3>
+          <p>Course index: operating systems, security, software troubleshooting, and operational procedures.</p>
+          <p><a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/">Open Professor Messer’s free Core 2 course index</a></p>
+          <ul>
+            <li><a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/operating-systems-overview-220-1202/">Operating systems overview</a></li>
+            <li><a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/windows-network-command-line-220-1202/">Windows network command line</a></li>
+            <li><a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/scripting-languages-220-1202/">Scripting languages</a></li>
+          </ul>
+        </article>
+      </div>
+      <p class="tip"><strong>Video study tip:</strong> pause before each explanation and answer the question yourself. Afterward, write one sentence about why the other choices are less suitable.</p>
+    </section>
+
+    <section id="practice" class="section" aria-labelledby="practice-title">
+      <h2 id="practice-title">Original practice tests</h2>
+      <p>These are original review questions, not copied exam questions. Select one answer per question, then choose “Check answers.” Your score and explanations will appear below each test. Works with keyboard and screen readers; no data is sent anywhere.</p>
+      <div id="quiz-core1" class="quiz-box" aria-labelledby="quiz-core1-title"></div>
+      <div id="quiz-core2" class="quiz-box" aria-labelledby="quiz-core2-title"></div>
+      <noscript><p>JavaScript is required for interactive scoring. The study notes and sources remain available without it.</p></noscript>
+    </section>
+
+    <section id="sources" class="section" aria-labelledby="sources-title">
+      <h2 id="sources-title">Free sources and exam alignment</h2>
+      <ol class="source-list">
+        <li><a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">CompTIA A+ V15 official overview and objective summaries</a> — verify the exam code and download the official objectives before exam day.</li>
+        <li><a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/">Professor Messer free A+ 220-1201 Core 1 course index</a>.</li>
+        <li><a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/">Professor Messer free A+ 220-1202 Core 2 course index</a>.</li>
+        <li><a href="https://learn.microsoft.com/en-us/training/">Microsoft Learn</a> — free product training for Windows and Microsoft technologies.</li>
+        <li><a href="https://www.w3.org/TR/WCAG22/">W3C Web Content Accessibility Guidelines (WCAG) 2.2</a> — accessibility reference for this site’s interaction patterns.</li>
+      </ol>
+      <p>Notes are paraphrased study aids written for this site. Always defer to the latest official exam objectives and vendor documentation when details conflict. For accessibility feedback, open a GitHub issue with the problem and assistive technology/browser used.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>Independent learning aid · Free sources linked above · Built for keyboard, screen-reader, zoom, and mobile use.</p></div>
+  </footer>
+</body>
+</html>
