@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" role="img" aria-labelledby="title desc">
+<title id="title">Small office network and name-resolution path</title>
+<desc id="desc">A laptop connects by Wi-Fi to an access point, then to a router and firewall, then to the ISP and a web server. A separate DNS query path resolves the web server name to an IP address. DHCP provides the laptop's address, gateway, and DNS settings.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#285f92"/></marker><marker id="dns" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8c4a11"/></marker></defs>
+<rect width="1100" height="360" rx="22" fill="#f3f8fc"/>
+<text x="550" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#132238">SOHO network: packet path and name lookup</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="30" y="115" width="150" height="86" rx="14" fill="#fff" stroke="#285f92" stroke-width="3"/><text x="105" y="151" font-size="21" font-weight="700" fill="#132238">Laptop</text><text x="105" y="180" font-size="16" fill="#40536b">DHCP client</text>
+<rect x="235" y="115" width="150" height="86" rx="14" fill="#fff" stroke="#285f92" stroke-width="3"/><text x="310" y="151" font-size="21" font-weight="700" fill="#132238">Access point</text><text x="310" y="180" font-size="16" fill="#40536b">Wi-Fi bridge</text>
+<rect x="440" y="115" width="170" height="86" rx="14" fill="#fff" stroke="#a44419" stroke-width="3"/><text x="525" y="151" font-size="21" font-weight="700" fill="#132238">Router / firewall</text><text x="525" y="180" font-size="16" fill="#40536b">gateway + rules</text>
+<rect x="665" y="115" width="140" height="86" rx="14" fill="#fff" stroke="#6941a5" stroke-width="3"/><text x="735" y="151" font-size="21" font-weight="700" fill="#132238">ISP</text><text x="735" y="180" font-size="16" fill="#40536b">Internet path</text>
+<rect x="880" y="115" width="180" height="86" rx="14" fill="#fff" stroke="#075b35" stroke-width="3"/><text x="970" y="151" font-size="21" font-weight="700" fill="#132238">Web server</text><text x="970" y="180" font-size="16" fill="#40536b">destination IP</text>
+<rect x="440" y="260" width="170" height="60" rx="12" fill="#fff4e5" stroke="#8c4a11" stroke-width="3"/><text x="525" y="286" font-size="18" font-weight="700" fill="#132238">DNS resolver</text><text x="525" y="308" font-size="15" fill="#40536b">name → IP</text>
+</g>
+<g fill="none" stroke="#285f92" stroke-width="4" marker-end="url(#arrow)"><path d="M181 158 H229"/><path d="M386 158 H434"/><path d="M611 158 H659"/><path d="M806 158 H874"/></g>
+<path d="M104 210 C104 274 330 291 432 291" fill="none" stroke="#8c4a11" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#dns)"/>
+<path d="M610 278 C735 249 950 255 966 210" fill="none" stroke="#8c4a11" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#dns)"/>
+<text x="263" y="253" font-family="Arial,sans-serif" font-size="16" fill="#74400d">DNS query / response</text>
+<text x="550" y="345" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#40536b">DHCP supplies IP, subnet mask, default gateway, and DNS server settings; DNS resolves names before application traffic.</text>
+</svg>

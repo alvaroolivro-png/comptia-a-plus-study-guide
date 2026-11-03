@@ -1,6 +1,6 @@
 # CompTIA A+ Accessible Study Guide
 
-Static, free study aid for CompTIA A+ V15 Core 1 (220-1201) and Core 2 (220-1202). The guide uses original paraphrased notes, direct links to free resources, and original interactive quizzes. It is not affiliated with CompTIA or Professor Messer.
+Static, free study aid for CompTIA A+ V15 Core 1 (220-1201) and Core 2 (220-1202). The guide uses original paraphrased notes, hardware/network/security/troubleshooting diagrams, quick-reference tables and flashcards, direct links to free resources, and original interactive quizzes (12 Core 1 questions; 13 Core 2 questions). It is not affiliated with CompTIA or Professor Messer.
 
 ## Preview locally
 
@@ -24,3 +24,5 @@ Use CompTIA's current objectives as the authoritative checklist. Core 1 and Core
 - Professor Messer Core 2 (220-1202): https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/
 - Microsoft Learn: https://learn.microsoft.com/en-us/training/
 - W3C WCAG 2.2: https://www.w3.org/TR/WCAG22/
+- Cisco Packet Tracer free training: https://skillsforall.com/course/packet-tracer
+- iFixit computer repair guide: https://www.ifixit.com/Wiki/Getting_Started_on_Computer_Repair

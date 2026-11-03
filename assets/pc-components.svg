@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<title id="title">Desktop PC motherboard component map</title>
+<desc id="desc">Top-down schematic of a motherboard with the CPU and cooler, two memory slots, M.2 storage, PCI Express graphics card slot, SATA ports, power connector, rear input/output ports, and case fans labelled.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#285f92"/></marker></defs>
+<rect width="1000" height="540" rx="24" fill="#f3f8fc"/>
+<text x="500" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#132238">Inside a desktop PC: component map</text>
+<rect x="260" y="80" width="480" height="400" rx="22" fill="#d9e9f5" stroke="#285f92" stroke-width="5"/>
+<rect x="410" y="145" width="170" height="120" rx="18" fill="#fff" stroke="#8c4a11" stroke-width="4"/>
+<circle cx="495" cy="205" r="39" fill="#fce6c6" stroke="#8c4a11" stroke-width="3"/>
+<text x="495" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#132238">CPU</text>
+<text x="495" y="228" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#132238">+ cooler</text>
+<rect x="618" y="138" width="28" height="122" rx="5" fill="#c2e6d4" stroke="#075b35" stroke-width="3"/>
+<rect x="657" y="138" width="28" height="122" rx="5" fill="#c2e6d4" stroke="#075b35" stroke-width="3"/>
+<text x="651" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#132238">DIMM slots</text>
+<rect x="350" y="315" width="255" height="36" rx="8" fill="#f9ddc7" stroke="#a44419" stroke-width="3"/>
+<text x="477" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#132238">PCIe x16 → graphics card</text>
+<rect x="385" y="378" width="150" height="26" rx="6" fill="#eee1fa" stroke="#6941a5" stroke-width="3"/>
+<text x="460" y="397" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#132238">M.2 SSD</text>
+<rect x="635" y="375" width="68" height="62" rx="8" fill="#fff" stroke="#285f92" stroke-width="3"/>
+<text x="669" y="399" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#132238">SATA</text>
+<text x="669" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#132238">ports</text>
+<rect x="285" y="135" width="38" height="125" rx="7" fill="#cbe7f4" stroke="#146b91" stroke-width="3"/>
+<text x="303" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#132238">Rear I/O</text>
+<rect x="290" y="390" width="74" height="44" rx="7" fill="#fce6c6" stroke="#8c4a11" stroke-width="3"/>
+<text x="327" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#132238">ATX power</text>
+<path d="M110 145 H250" fill="none" stroke="#285f92" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="40" y="125" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#132238">Case airflow</text>
+<text x="40" y="151" font-family="Arial,sans-serif" font-size="16" fill="#40536b">front intake</text>
+<path d="M110 180 H248" fill="none" stroke="#285f92" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M750 440 H855" fill="none" stroke="#285f92" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="785" y="414" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#132238">Rear exhaust</text>
+<text x="500" y="514" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#40536b">Check board manual for exact slot, socket, and connector placement.</text>
+</svg>

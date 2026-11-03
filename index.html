@@ -46,6 +46,44 @@
     <section id="core1" class="section" aria-labelledby="core1-title">
       <h2 id="core1-title">Core 1 · 220-1201</h2>
       <p class="section-intro">Core 1 emphasizes devices, networking, hardware, cloud/virtualization, and hardware/network troubleshooting. The percentages below follow the current official summary. <a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">Source [1]</a></p>
+      <div class="figure-grid">
+        <figure class="study-figure"><img src="assets/pc-components.svg" alt="Schematic map of a desktop motherboard: CPU and cooler in the center, DIMM slots, PCIe graphics slot, M.2 SSD, SATA ports, power connector, rear I/O, and case airflow arrows."><figcaption>PC component map: practice naming each part, its role, and what must match during replacement.</figcaption></figure>
+        <figure class="study-figure"><img src="assets/network-path.svg" alt="Network path from laptop through wireless access point, router/firewall, ISP, and web server, with separate DNS lookup and DHCP configuration paths."><figcaption>Network path: use this to reason through address assignment, gateway routing, DNS resolution, and application connectivity.</figcaption></figure>
+      </div>
+      <details>
+        <summary>Extra Core 1 notes · connectors, memory, and storage</summary>
+        <div class="table-wrap"><table><caption>Fast hardware comparisons</caption><thead><tr><th scope="col">Item</th><th scope="col">Know this</th><th scope="col">Check before service</th></tr></thead><tbody>
+          <tr><th scope="row">DDR4 vs DDR5</th><td>Different signaling, notch/keying, and board support.</td><td>CPU + motherboard support; do not force a module.</td></tr>
+          <tr><th scope="row">SATA vs NVMe</th><td>SATA is a storage interface; NVMe uses PCIe for low-latency access.</td><td>M.2 is a form factor; verify protocol, keying, and slot support.</td></tr>
+          <tr><th scope="row">DIMM vs SO-DIMM</th><td>Desktop vs smaller laptop memory module formats.</td><td>Generation, capacity, speed, rank, and supported slots.</td></tr>
+          <tr><th scope="row">USB-C</th><td>Reversible connector shape; capabilities vary by device/cable.</td><td>Data rate, power delivery, and display support separately.</td></tr>
+          <tr><th scope="row">HDMI / DisplayPort</th><td>Digital display links; both may carry audio.</td><td>Resolution, refresh rate, cable capability, and input selection.</td></tr>
+        </tbody></table></div>
+        <p>Never open a power-supply enclosure or CRT. Disconnect power, use ESD precautions, and verify compatibility against the system documentation. iFixit’s free repair guides add photo-based practice; follow device-specific safety steps. <a href="https://www.ifixit.com/Wiki/Getting_Started_on_Computer_Repair">Source [8]</a></p>
+      </details>
+      <details>
+        <summary>Extra Core 1 notes · wireless and troubleshooting clues</summary>
+        <ul>
+          <li><strong>2.4 GHz:</strong> longer reach and better obstacle penetration, but more interference and fewer non-overlapping channels.</li>
+          <li><strong>5 GHz:</strong> more channels and throughput at shorter range; walls reduce signal more than at 2.4 GHz.</li>
+          <li><strong>6 GHz:</strong> additional spectrum for supported Wi-Fi 6E/7 devices; both client and AP must support it.</li>
+          <li><strong>Latency vs throughput:</strong> latency is delay; throughput is useful data rate; jitter is variation in delay; packet loss is missing traffic.</li>
+          <li><strong>Intermittent Wi-Fi:</strong> compare distance, band, channel congestion, roaming, driver state, and whether wired clients are affected.</li>
+          <li><strong>Slow disk:</strong> inspect free space, activity, health/S.M.A.R.T. indicators, cables, and background load before replacing it.</li>
+        </ul>
+        <p><strong>Mini-lab:</strong> Use Cisco Packet Tracer’s free Getting Started course to build a small LAN; label the switch, AP, gateway, DHCP service, and DNS service. Then break one setting and trace the symptom. <a href="https://skillsforall.com/course/packet-tracer">Source [7]</a></p>
+      </details>
+      <details>
+        <summary>Core 1 flashcards · open to reveal</summary>
+        <ul>
+          <li><details><summary>What does a default gateway do?</summary><p>Forwards traffic from the local network to destinations outside its subnet.</p></details></li>
+          <li><details><summary>What does an APIPA address suggest?</summary><p>The device did not obtain a DHCP lease; inspect link, VLAN, DHCP scope/service, and relay path.</p></details></li>
+          <li><details><summary>Which RAID levels in this guide provide mirroring?</summary><p>RAID 1 mirrors; RAID 10 combines mirrored pairs with striping. Neither replaces an independent backup.</p></details></li>
+          <li><details><summary>What is the purpose of thermal paste?</summary><p>It fills microscopic gaps between a processor heat spreader and heatsink to improve heat transfer.</p></details></li>
+          <li><details><summary>What should you check before installing a CPU?</summary><p>Socket/chipset support, BIOS compatibility, cooler requirements, and careful alignment—never force it.</p></details></li>
+          <li><details><summary>Which printer uses a fuser?</summary><p>A laser printer; the fuser uses heat and pressure to bond toner to the page.</p></details></li>
+        </ul>
+      </details>
       <details open>
         <summary>1 · Mobile devices — 13%</summary>
         <ul>
@@ -104,6 +142,46 @@
     <section id="core2" class="section" aria-labelledby="core2-title">
       <h2 id="core2-title">Core 2 · 220-1202</h2>
       <p class="section-intro">Core 2 focuses on operating systems, security, software troubleshooting, and operational procedures. Domain weights below follow the current official summary. <a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">Source [1]</a></p>
+      <div class="figure-grid">
+        <figure class="study-figure"><img src="assets/troubleshooting-flow.svg" alt="Six-step troubleshooting flow: identify the problem, form a theory, test it, implement a planned fix, verify full function, and document; a side panel matches Windows tools to common tasks."><figcaption>Remember the troubleshooting loop; choose a tool because it answers a specific diagnostic question.</figcaption></figure>
+        <figure class="study-figure"><img src="assets/security-layers.svg" alt="Five security layers: people and identity, endpoint, network, data, and recovery, with example controls in each layer."><figcaption>Defense in depth: combine identity, endpoint, network, data, and recovery controls.</figcaption></figure>
+      </div>
+      <details>
+        <summary>Extra Core 2 notes · Windows command and recovery quick sheet</summary>
+        <div class="table-wrap"><table><caption>Choose the Windows tool that fits the symptom</caption><thead><tr><th scope="col">Need to know</th><th scope="col">Tool / command</th><th scope="col">What it helps show</th></tr></thead><tbody>
+          <tr><th scope="row">IP, gateway, DNS configuration</th><td><code>ipconfig /all</code></td><td>Address assignment, adapter state, gateway, DNS servers, DHCP lease.</td></tr>
+          <tr><th scope="row">Reachability</th><td><code>ping</code></td><td>Tests whether a target responds; filtering can make a live host appear not to reply.</td></tr>
+          <tr><th scope="row">Name resolution</th><td><code>nslookup</code></td><td>Queries DNS and helps separate name-resolution from basic IP reachability.</td></tr>
+          <tr><th scope="row">Route path</th><td><code>tracert</code></td><td>Shows responding hops along a route; missing replies do not prove that all later hops are down.</td></tr>
+          <tr><th scope="row">Listening ports and sessions</th><td><code>netstat -ano</code></td><td>Lists connections/listeners and process IDs for follow-up investigation.</td></tr>
+          <tr><th scope="row">Protected system files</th><td><code>sfc /scannow</code></td><td>Checks protected Windows files and attempts repair; run elevated as appropriate.</td></tr>
+        </tbody></table></div>
+        <p>Use the least disruptive diagnostic first. Record the exact command, output, change, and verification result in the ticket.</p>
+      </details>
+      <details>
+        <summary>Extra Core 2 notes · backup types and incident response</summary>
+        <div class="table-wrap"><table><caption>Backup set comparison</caption><thead><tr><th scope="col">Type</th><th scope="col">Copies changes since</th><th scope="col">Restore set</th></tr></thead><tbody>
+          <tr><th scope="row">Full</th><td>All selected data at backup time.</td><td>One full set (plus later backups if needed).</td></tr>
+          <tr><th scope="row">Incremental</th><td>The most recent backup of any type.</td><td>Full backup plus every subsequent incremental in order.</td></tr>
+          <tr><th scope="row">Differential</th><td>The most recent full backup.</td><td>Full backup plus the latest differential.</td></tr>
+        </tbody></table></div>
+        <ol>
+          <li><strong>Suspected malware:</strong> follow policy, isolate the affected device from networks when directed, preserve needed evidence, and report through the incident process.</li>
+          <li><strong>Before recovery:</strong> confirm backup date, integrity, and restore target; protect current data and document authorization.</li>
+          <li><strong>After recovery:</strong> patch, reset exposed credentials as approved, verify security controls, test the user's workflow, and document lessons learned.</li>
+        </ol>
+      </details>
+      <details>
+        <summary>Core 2 flashcards · open to reveal</summary>
+        <ul>
+          <li><details><summary>What do CIA stand for?</summary><p>Confidentiality, integrity, and availability—the three core information-security goals.</p></details></li>
+          <li><details><summary>What is least privilege?</summary><p>Give each identity only the access required for its approved tasks, for only as long as needed.</p></details></li>
+          <li><details><summary>Incremental vs differential backup?</summary><p>Incremental: since any last backup. Differential: since the last full backup.</p></details></li>
+          <li><details><summary>Which tool shows Windows system and application logs?</summary><p>Event Viewer.</p></details></li>
+          <li><details><summary>What should a change plan include?</summary><p>Scope, impact, approval, schedule, backup/rollback plan, verification, and documentation.</p></details></li>
+          <li><details><summary>What is the first response to a suspicious phishing link?</summary><p>Do not interact further; report it via the approved process. If credentials were entered, promptly notify security and follow containment/reset policy.</p></details></li>
+        </ul>
+      </details>
       <details open>
         <summary>1 · Operating systems — 28%</summary>
         <ul>
@@ -187,13 +265,16 @@
 
     <section id="sources" class="section" aria-labelledby="sources-title">
       <h2 id="sources-title">Free sources and exam alignment</h2>
-      <ol class="source-list">
+      <ul class="source-list">
         <li><a href="https://www.comptia.org/en-us/certifications/a/core-1-and-2-v15/">CompTIA A+ V15 official overview and objective summaries</a> — verify the exam code and download the official objectives before exam day.</li>
         <li><a href="https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/">Professor Messer free A+ 220-1201 Core 1 course index</a>.</li>
         <li><a href="https://www.professormesser.com/free-a-plus-training/220-1202/220-1202-video/220-1202-training-course/">Professor Messer free A+ 220-1202 Core 2 course index</a>.</li>
         <li><a href="https://learn.microsoft.com/en-us/training/">Microsoft Learn</a> — free product training for Windows and Microsoft technologies.</li>
         <li><a href="https://www.w3.org/TR/WCAG22/">W3C Web Content Accessibility Guidelines (WCAG) 2.2</a> — accessibility reference for this site’s interaction patterns.</li>
-      </ol>
+        <li><a href="https://skillsforall.com/course/packet-tracer">Cisco Skills for All · Packet Tracer</a> — free guided network simulation practice [7].</li>
+        <li><a href="https://www.ifixit.com/Wiki/Getting_Started_on_Computer_Repair">iFixit · Getting Started on Computer Repair</a> — repair safety and device-specific guides [8].</li>
+        <li><a href="https://www.professormesser.com/free-a-plus-training/">Professor Messer free A+ training archive</a> — includes free learning and practice resources [9].</li>
+      </ul>
       <p>Notes are paraphrased study aids written for this site. Always defer to the latest official exam objectives and vendor documentation when details conflict. For accessibility feedback, open a GitHub issue with the problem and assistive technology/browser used.</p>
     </section>
   </main>

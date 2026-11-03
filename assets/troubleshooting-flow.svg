@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+<title id="title">Troubleshooting workflow and Windows tool choices</title>
+<desc id="desc">Six-step troubleshooting flow: identify the problem, form a theory, test it, plan and implement a fix, verify full functionality, and document. A side panel maps common questions to Task Manager, Event Viewer, Device Manager, Disk Management, and command-line tools.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#285f92"/></marker></defs>
+<rect width="1100" height="430" rx="22" fill="#f3f8fc"/>
+<text x="550" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#132238">Troubleshoot in a repeatable order</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="35" y="92" width="155" height="82" rx="13" fill="#fff" stroke="#285f92" stroke-width="3"/><text x="112" y="124" font-size="19" font-weight="700" fill="#132238">1 · Identify</text><text x="112" y="150" font-size="15" fill="#40536b">scope + symptoms</text>
+<rect x="215" y="92" width="155" height="82" rx="13" fill="#fff" stroke="#285f92" stroke-width="3"/><text x="292" y="124" font-size="19" font-weight="700" fill="#132238">2 · Theory</text><text x="292" y="150" font-size="15" fill="#40536b">likely cause</text>
+<rect x="395" y="92" width="155" height="82" rx="13" fill="#fff" stroke="#285f92" stroke-width="3"/><text x="472" y="124" font-size="19" font-weight="700" fill="#132238">3 · Test</text><text x="472" y="150" font-size="15" fill="#40536b">confirm / reject</text>
+<rect x="575" y="92" width="155" height="82" rx="13" fill="#fff" stroke="#a44419" stroke-width="3"/><text x="652" y="124" font-size="19" font-weight="700" fill="#132238">4 · Fix</text><text x="652" y="150" font-size="15" fill="#40536b">plan + implement</text>
+<rect x="755" y="92" width="155" height="82" rx="13" fill="#fff" stroke="#075b35" stroke-width="3"/><text x="832" y="124" font-size="19" font-weight="700" fill="#132238">5 · Verify</text><text x="832" y="150" font-size="15" fill="#40536b">test full function</text>
+<rect x="935" y="92" width="130" height="82" rx="13" fill="#fff" stroke="#6941a5" stroke-width="3"/><text x="1000" y="124" font-size="19" font-weight="700" fill="#132238">6 · Document</text><text x="1000" y="150" font-size="15" fill="#40536b">record outcome</text>
+</g>
+<g fill="none" stroke="#285f92" stroke-width="3" marker-end="url(#arrow)"><path d="M191 133 H209"/><path d="M371 133 H389"/><path d="M551 133 H569"/><path d="M731 133 H749"/><path d="M911 133 H929"/></g>
+<rect x="55" y="225" width="990" height="155" rx="16" fill="#fff" stroke="#a7b8ca" stroke-width="2"/>
+<text x="80" y="259" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#132238">Choose a Windows tool by the question</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="#132238">
+<text x="92" y="296"><tspan font-weight="700">Processes / startup:</tspan> Task Manager</text>
+<text x="92" y="330"><tspan font-weight="700">Recorded errors:</tspan> Event Viewer</text>
+<text x="92" y="364"><tspan font-weight="700">Driver / device state:</tspan> Device Manager</text>
+<text x="575" y="296"><tspan font-weight="700">Partitions / volumes:</tspan> Disk Management</text>
+<text x="575" y="330"><tspan font-weight="700">Network / name path:</tspan> ipconfig, ping, tracert, nslookup</text>
+<text x="575" y="364"><tspan font-weight="700">Protected system files:</tspan> sfc /scannow</text>
+</g>
+</svg>
